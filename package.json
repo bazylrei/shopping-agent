@@ -8,9 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "@ai-sdk/anthropic": "^4.0.102",
+    "@ai-sdk/react": "^4.0.173",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "ai": "^7.0.169",
     "next": "16.4.6",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "undici": "^8.12.4"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "4.3.3",

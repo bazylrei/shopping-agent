@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(vercel --version)",
+      "Bash(vercel whoami *)",
+      "Bash(vercel link *)",
+      "Bash(vercel deploy *)",
+      "Bash(curl *)",
+      "Bash(NEXT_PUBLIC_APP_URL=https://shopping-agent-opal-alpha.vercel.app npx tsx *)",
+      "Bash(node *)",
+      "Bash(npx tsx *)",
+      "Bash(python3 -c \"import sys,json; p=json.load\\(sys.stdin\\); print\\(json.dumps\\(p.get\\('exports', {}\\), indent=2\\)\\)\")",
+      "Bash(python3 -c \"import sys,json; p=json.load\\(sys.stdin\\); [print\\(k\\) for k in p.get\\('exports', {}\\).keys\\(\\)]\")",
+      "Bash(python3 -c \"import sys,json; p=json.load\\(sys.stdin\\); print\\(json.dumps\\(p.get\\('exports', {}\\).get\\('./*'\\), indent=2\\)\\)\")",
+      "Bash(python3 -c \"import json; p=json.load\\(open\\('package.json'\\)\\); print\\('type:', p.get\\('type', 'commonjs'\\)\\)\")",
+      "Bash(xargs ls -la)",
+      "Bash(/usr/libexec/ApplicationFirewall/socketfilterfw --getglobalstate)",
+      "Bash(/usr/libexec/ApplicationFirewall/socketfilterfw --listapps)",
+      "WebFetch(domain:shopify.dev)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:ucp.dev)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(python3 -m json.tool)",
+      "Bash(python3 -c \"import sys,json; p=json.load\\(sys.stdin\\); print\\(p['version']\\)\")",
+      "Bash(npm install *)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('peers:', json.dumps\\(d.get\\('peerDependencies', {}\\), indent=2\\)\\)\")",
+      "Bash(npm run *)"
+    ]
+  }
+}
